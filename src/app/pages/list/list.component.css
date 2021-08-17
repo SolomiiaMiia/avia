@@ -1,0 +1,23 @@
+.listBlock{
+  position: absolute;
+  width: 760px;
+  height: 280px;
+  left: 337px;
+  top: 632px;
+  background-color: #fff;
+  /* border-radius: 5px; */
+  
+}
+
+/* .header{
+  width: 687px;
+  height: 16px;
+  left: 354px;
+  top: 632px;
+  border: 1px solid black;
+} */
+
+.thead{
+  background-color: lightgrey;
+  color: gray;
+}

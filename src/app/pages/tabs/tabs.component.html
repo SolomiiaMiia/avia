@@ -1,0 +1,49 @@
+<div class="t">
+  <tabset class="tabs" style="padding:60px;">
+    <tab heading="Відправлення">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Час</th>
+            <th scope="col">Напрямок</th>
+            <th scope="col">Рейс</th>
+            <th scope="col">Компанія</th>
+            <th scope="col">Статус</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of departure">
+            <th>{{item.actual | slice:11:19}}</th>
+            <td>{{item["airportToID.city"]}}</td>
+            <td>{{item.codeShareData[0].codeShare}}</td>
+            <td>{{item.airline.en.name}}</td>
+            <td>{{item.status}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </tab>
+
+    <tab heading="Прибуття" id="tab1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Час</th>
+            <th scope="col">Напрямок</th>
+            <th scope="col">Рейс</th>
+            <th scope="col">Компанія</th>
+            <th scope="col">Статус</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of filteradArrival">
+            <th>{{item.actual | slice:11:19}}</th>
+            <td>{{item["airportFromID.city"]}}</td>
+            <td>{{item.codeShareData[0].codeShare}}</td>
+            <td>{{item.airline.en.name}}</td>
+            <td>{{item.status}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </tab>
+  </tabset>
+</div>

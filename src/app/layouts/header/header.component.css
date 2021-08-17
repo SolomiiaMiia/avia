@@ -1,0 +1,19 @@
+.header{
+  height: 480px;
+  background-image: url(/assets/imsges/Hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 82.03px;
+  color: white;
+ opacity:0.8;
+-moz-opacity:0.8;
+filter: alpha(opacity=80) black;
+-khtml-opacity: 0.8;
+background-color:#000;
+}
+

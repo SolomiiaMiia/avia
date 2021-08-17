@@ -1,0 +1,3 @@
+<app-header></app-header>
+<app-searchbar #searchBar (emitM)="tabs.searchInfo($event)"></app-searchbar>
+<app-tabs #tabs [search]="searchBar.searchControl.value"> </app-tabs>
